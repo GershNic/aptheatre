@@ -1,0 +1,86 @@
+@keyframes draw {
+    100% {
+       stroke-dashoffset: 0;
+    }
+ }
+
+ @keyframes left {
+    from {
+        text-indent: -150%;
+    }
+
+    to {
+        text-indent: 100%;
+    }
+ }
+
+ @keyframes right {
+    from {
+        text-indent: 100%;
+    }
+
+    to {
+        text-indent: var(--end-indent);
+    }
+ }
+
+ @keyframes line {
+    0% {
+        transform: translate3d(-25%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-900%, 0, 0);
+    }
+ }
+
+ @keyframes marqueeLine {
+    0% {
+      transform: translateX(0);
+    }
+    
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@keyframes blink {  
+	0% { fill: #F00; }
+	50% { fill: rgb(255, 255, 255); }
+	100% { fill: #F00; } 
+}
+
+
+@keyframes circle_right {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 100%;
+    }
+ }
+
+ @keyframes circle_left {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: -100%;
+    }
+ }
+
+ @keyframes eyes_blink {
+
+    90% {
+        transform: none;
+        animation-timing-function: ease-in;
+      }
+      93% {
+        transform: translateY(15px) scaleY(0)
+      }
+      100% {
+        animation-timing-function: ease-out;
+      }
+ }
