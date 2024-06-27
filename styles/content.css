@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@font-face {
+    font-family: "Geometria bold";
+    src: url(../fonts/geometria_bold.otf);
+    font-weight: 700;
+    font-style: bold ;
+}
+
+.centered_absolute {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.big {
+    font-size: 10vw;
+}
+
+.medium {
+    font-size: 5vw;
+}
+
+.small {
+    font-size: 4vw;
+}
+
+.left {
+    animation: left 4s linear infinite;
+}
+
+.right {
+    --end-indent: -100%;
+    animation: right 4.5s linear infinite;
+}
+
+.sm_right {
+    --end-indent: -200%;
+    animation: right 3s linear infinite;
+}
+
+.blink_2s > path {
+    animation: blink 2s linear infinite;
+}
+
+.blink_4s > path {
+    animation: blink 4s linear infinite;
+}
+
+.blink_5s > path {
+    animation: blink 5s linear infinite;
+}
+
+.circle_left {
+    animation: circle_left 3s ease-in infinite;
+}
+
+.circle_right { 
+    animation: circle_right 3s ease-in infinite;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.paranoia_block {
+    margin-top: 15vh;
+    position: relative;
+    margin-bottom: 30vh;
+    height: 80vh;
+}
+
+.paranoia {
+    width: 40vw;
+    height: 40vw;
+
+}
+
+.paranoia_line_one, .paranoia_line_two {
+    width: 40vw;
+    height: 40vw;
+}
+
+
+
+.redline_one, .redline_two {
+    stroke-width: 6;
+    stroke-dasharray: 16488;
+    stroke-dashoffset: 16488;
+}
+
+.redline_one {
+    animation: draw 7s linear forwards;
+    animation-play-state: paused;
+}
+
+.redline_two {
+    animation: draw 7s linear forwards; 
+    animation-delay: 3s;
+    animation-play-state: paused; 
+}
+
+.paranoia_line_two {
+    margin-top: 90px;
+}
+
+.redlines:hover .redline_one {
+    animation-play-state: running;
+
+    
+}
+
+.redlines:hover .redline_two {
+    animation-play-state: running;
+}
+
+
+.trypophobia_block {
+   position: relative;
+   height: 115vh;
+   margin-top: 15vh;
+}
+
+.trypophobia_text {
+    position: absolute;
+    margin-left: 1.3vw;
+    font-size: 3vw;
+    z-index: 2;
+}
+
+.trypophobia_image {
+    width: 45vw;
+    z-index: 1;
+}
+
+
+.trypophobia_image > ellipse {
+    animation: blink 1s linear infinite;
+}
+
+.circles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.circle {
+    width: 99vw;
+}
+
+.astrophobia_block {
+    margin-bottom: 15vw;
+}
+
+ .astrophobia_text {
+     margin-left: 1.3vw;
+     font-size: 3vw;
+ }
+ 
+ .astrophobia_image {
+     width: 45vw;
+ }
+
+.stars {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.star_group {
+    display: flex;
+    flex-direction: column;
+}
+
+ .star {
+    width: 30vh;
+    flex-basis: 28.333333%;
+ }
+
+ .out {
+    padding-bottom: 100px;
+ }
+
+ .longophobia_block {
+    overflow: hidden;
+    margin-bottom: 15vw;
+ }
+
+ .longophobia_text {
+    margin-left: 1.3vw;
+    margin-bottom: 2.1vw;
+    font-size: 3vw;
+ }
+
+.long {
+    float: right;
+    color: red;
+}
+
+
+.arthmeticophobia_block {
+    margin-bottom: 15vw;
+}
+
+.arthmeticophobia_text {
+    margin-left: 1.3vw; 
+    font-size: 3vw;
+}
+
+.nums {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.num {
+    font-size: 20vw;
+    flex-basis: 33%;
+    transition: color 0.5s ease-in-out;
+}
+
+.num:hover {
+    color: red;
+}
+
+
+.running_block {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 5vw;
+}
+
+.running_text {
+    font-size: 3vh;
+    flex-shrink: 0;
+    padding-left: 5px;
+    margin: 0;
+    min-width: 14vw;
+    animation: marqueeLine 1s linear infinite;
+}
+
+
+
+.look_into_fears_block {
+    margin-bottom: 5vw;
+}
+
+.eyes {
+    position: relative;
+}
+
+.eyeballs {
+    position: absolute;
+    width: 40vw;
+
+    animation: eyes_blink 2s ease-in-out infinite;
+}
+
+.pupils {
+    top: 2vw;
+    position: absolute;
+    width: 30vw;
+    z-index: 1;
+}
+
+.fear_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 17vw;
+}
+
+.look_into_text, .eyes_of_fear_text {
+    font-family: "Geometria bold", sans-serif;
+    text-align: center;
+}
+
+.look_into_text {
+    font-size: 150px;
+}
+
+
+
+.eyes_of_fear_text {
+    font-size: 100px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 2vw;
+    font-size: 2.8vw;
+    padding: 20px;
+}
