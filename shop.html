@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Паранойя</title>
+</head>
+<header class="header">
+    <div class="header__items">
+        <a href="." class="header__logo"></a>
+        <nav class="header__nav_tabs">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="posters"><span class="header__span">афиша</span></a></li>
+                <li class="header__item"><a class="header__link" href="shop"><span class="header__span">магазин</span></a></li>
+                <li class="header__item"><a class="header__link" href="about"><span class="header__span">о театре</span></a></li>
+                <li class="header__item"><a class="header__link" href="events"><span class="header__span">мероприятия</span></a></li>
+                <li class="header__item"><a class="header__link" href="help"><span class="header__span">поддержка</span></a></li>
+            </ul>
+        </nav>
+        <button class="burger__button" type="button" onclick="link()">
+            <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+               <path fill="white" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+         </button>
+    </div>
+</header>
+<div class="burger">
+    <div class="burger__links">
+        <a class="header__link" href="posters">афиша</a>
+        <a class="header__link" href="shop">магазин</a>
+        <a class="header__link" href="about">о театре</a>
+        <a class="header__link" href="events">мероприятия</a>
+        <a class="header__link" href="help">поддержка</a>
+    </div>
+</div>
+<body class="shop">
+    <div class="shop__container">
+        <div class="shop__goods">
+            <div class="shop__good_item">
+                <div class="shop__good_img">
+                    <img class="shop__good good_1" src="./imgs/goods/item_1.png" alt="">
+                </div>
+                <div class="shop__buy">
+                    <p>блокнот и ручка<br>2300 р</p>
+                    <div class="shop__buy_div">
+                        <p><span class="shop__span">купить</span></p>
+                        <span class='shop__counter'>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__good_item">
+                <div class="shop__good_img">
+                    <img class="shop__good good_2" src="./imgs/goods/item_2.png" alt="">
+                </div>
+                <div class="shop__buy">
+                    <p>браслеты <br>550 р</p>
+                    <div class="shop__buy_div">
+                        <p><span class="shop__span">купить</span></p>
+                        <span class='shop__counter'>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__good_item">
+                <div class="shop__good_img">
+                    <img class="shop__good good_3" src="./imgs/goods/item_3.png" alt="">
+                </div> 
+                <div class="shop__buy buy_3">
+                    <p>толстовка <br>3000 р</p>
+                    <div class="shop__buy_div">
+                        <p><span class="shop__span">купить</span></p>
+                        <span class='shop__counter'>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__good_item">
+                <div class="shop__good_img">
+                    <img class="shop__good good_4" src="./imgs/goods/item_4.png" alt="">
+                </div>  
+                <div class="shop__buy">
+                    <p>подарочная карта <br>3000 р</p>
+                    <div class="shop__buy_div">
+                        <p><span class="shop__span">купить</span></p>
+                        <span class='shop__counter'>0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="shop__good_item">
+                <div class="shop__good_img">
+                    <img class="shop__good good_5" src="./imgs/goods/item_5.png" alt="">    
+                </div> 
+                <div class="shop__buy buy_5">
+                    <p>сумка <br>2900 р</p>
+                    <div class="shop__buy_div">
+                        <p><span class="shop__span">купить</span></p>
+                        <span class='shop__counter'>0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.3.7.1.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/shop_control.js"></script>
+</html>

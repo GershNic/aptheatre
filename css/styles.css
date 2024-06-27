@@ -1,0 +1,516 @@
+.header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FF0000;
+}
+
+.header__items {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1380px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: block;
+    width: 120px;
+    height: 41px;
+    background-image: url(../imgs/logo.svg);
+    background-repeat: no-repeat;
+}
+
+.header__list {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.header__link:visited {color: white;}
+
+.header__link:hover {
+    opacity: 100%;
+}
+
+.header__span {
+    background-color: #BA1414;
+    padding: 10px 10px;
+
+}
+
+.burger {
+    background-color: #FF0000;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.burger__button {
+    width: 50px;
+    height: 50px;
+    background-color: #BA1414;
+    border: none;
+    display: none;
+    cursor: pointer;
+}
+
+.burger__links {
+    display: flex;
+    font-size: 28px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.index__images {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.index__spider {
+    position: relative;
+    width: 200px;
+    z-index: 1;
+    animation: move 1s ease-in-out infinite forwards;
+}
+
+.index__logo {
+    position: relative;
+    bottom: 90px;
+    width: 400px;
+    z-index: 0;
+}
+
+.line {
+    animation: marqueeLineLeft 10s linear infinite;
+    color: red;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.line__right {
+    text-align: left;
+    animation: marqueeLineRight 10s linear infinite;
+}
+
+.texts__absoluted {
+    position: absolute;
+    width: 100%;
+}
+
+.texts_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left__text {
+    padding-left: 30px;
+    padding-top: 50px;
+    opacity: 0;
+}
+
+.right__text {
+    padding-right: 30px;
+    padding-top: 50px;
+    opacity: 0;
+}
+
+.down__text {
+    display: none;
+    padding-bottom: 30px;
+}
+
+
+.text__title {
+    font-size: 56px;
+}
+
+.text__desc {
+    font-size: 20px;
+}
+
+:root {
+    --increase-to: 400px;
+}
+
+.posters__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 76vh;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    width: 100%;
+    margin-top: 40px;
+    position: absolute;
+}
+
+.poster__item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.poster__item_1 {
+    margin-bottom: 10px;
+}
+
+.poster__item_2 {
+    margin-bottom: 15px;
+}
+
+.poster__item_3 {
+    margin-bottom: 20px;
+}
+
+.poster__item_4 {
+    margin-bottom: 25px;
+}
+
+
+.poster__btn {
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+.poster__items_group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.poster__item_img {
+    width: 250px;
+    position: relative;
+}
+
+.poster__item_3, .poster__item_4 {
+    float: left;
+}
+
+.poster__item_used {
+    z-index: 99;
+}
+
+.poster__btn_span > p {
+    white-space: nowrap;
+    font-size: 19px;
+    text-align: center;
+}
+
+.poster__btn_span {
+    background-color: #BA1414;
+    padding: 5px 10px;
+}
+
+
+.shop__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.shop__goods {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.shop__good_img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 33%;
+    cursor: pointer;
+}
+
+.shop__good_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(133.33deg, rgba(255, 0, 0, 0.1) 25.73%, #000000 91.72%);
+    z-index: 1;
+    display: none;
+}
+
+.shop__good_img.show::before {
+    display: block;
+}
+
+.good_4 {
+    width: 400px;
+}
+
+.shop__buy {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    bottom: 0;
+    display: none;
+}
+
+.shop__buy > p {
+    white-space: nowrap;
+    font-size: 19px;
+    left: 0;
+    text-align: left;
+}
+
+.shop__buy_div {
+    display: flex;
+}
+
+.shop__span {
+    background-color: #BA1414;
+    padding: 10px 10px;
+    width: 60px;
+    height: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.shop__counter {
+    font-size: 15px;
+    height: 10px;
+    padding: 0 5px;
+    vertical-align: top;
+    opacity: 0;
+}
+
+.shop__good {
+    width: 400px;
+}
+
+.buy_3 {
+    bottom: 90px;
+}
+
+.buy_5 {
+    bottom: 100px;
+}
+
+.about__texts {
+    margin-top: 70px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.about__book_1 {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.about__book_2 {
+    position: relative;
+    margin-top: -19.5vw;
+    width: 100%;
+}
+
+.about__link_text {
+    font-size: 40px;
+    text-align: right;
+    margin-right: 150px;
+}
+
+.about__link_down {
+    margin-bottom: 150px;
+}
+
+.about__web_div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__web_div > img {
+    width: 70%;
+}
+
+.events__container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.poster__groups {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.event__poster {
+    width: 18vw;
+    cursor: pointer;
+}
+
+.event__poster_1 {
+    position: relative;
+    z-index: 1;
+}
+
+.event__poster_2 {
+    position: relative;
+    transform: rotate(15.51deg);
+    z-index: 0;
+}
+
+.event__poster_3 {
+    z-index: 1;
+    position: relative;
+    transform: rotate(-14.34deg);
+}
+
+.event__poster_4 {
+    position: relative;
+    transform: rotate(27.7deg);
+    right: 5vw;
+}
+
+.ticket__block {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    display: none;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.ticket__poster {
+    width: 25vw;
+    padding-left: 100px;
+}
+
+.ticket__buy {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 25px;
+    margin-top: 60px;
+    padding-right: 100px;
+}
+
+.ticket__span {
+    background-color: #BA1414;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.help__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.help__texts {
+    margin-top: 55px;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.review__input[type=text] {
+    width: 220px;
+    appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: .2em solid #BA1414;
+	border-radius: .2em .2em 0 0;
+	padding: .4em;
+    background-color: red;
+	color: white;
+}
+
+.review__input[type=text]::placeholder {
+    opacity: 0.9;
+}
+
+.review__send {
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    font-family: "Inter-Regular";
+}
+
+
+.eyes {
+    margin-top: 18vh;
+}
+
+.eyes__block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.eyes__eyeballs {
+    position: absolute;
+    width: 40vw;
+
+    animation: eyes_blink 2s ease-in-out infinite;
+}
+
+.eyes__pupils {
+    top: 2vw;
+    position: absolute;
+    width: 30vw;
+    z-index: 1;
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30vw;
+    text-align: center;
+    height: 100svh;
+    color: red;
+}

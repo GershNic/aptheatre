@@ -1,0 +1,53 @@
+@keyframes eyes_blink {
+    90% {
+        transform: none;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        transform: translateY(15px) scaleY(0)
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+    }
+ }
+
+ @keyframes move
+    {
+      0%   {
+          transform: rotate(0deg) ;
+      }
+      33% {
+          transform: rotate(15deg);
+        }
+
+      66% {
+        transform: rotate(-15deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+
+    @keyframes marqueeLineLeft {
+      0% {
+        transform: translateX(30%);
+      }
+      
+      100% {
+        transform: translateX(-140%);
+      }
+  }
+  
+  @keyframes marqueeLineRight {
+    0% {
+      transform: translateX(-90%);
+    }
+    
+    100% {
+      transform: translateX(140%);
+    }
+}

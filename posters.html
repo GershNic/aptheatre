@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Паранойя</title>
+</head>
+<header class="header">
+    <div class="header__items">
+        <a href="." class="header__logo"></a>
+        <nav class="header__nav_tabs">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="posters"><span class="header__span">афиша</span></a></li>
+                <li class="header__item"><a class="header__link" href="shop"><span class="header__span">магазин</span></a></li>
+                <li class="header__item"><a class="header__link" href="about"><span class="header__span">о театре</span></a></li>
+                <li class="header__item"><a class="header__link" href="events"><span class="header__span">мероприятия</span></a></li>
+                <li class="header__item"><a class="header__link" href="help"><span class="header__span">поддержка</span></a></li>
+            </ul>
+        </nav>
+        <button class="burger__button" type="button" onclick="link()">
+            <svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+               <path fill="white" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+         </button>
+    </div>
+</header>
+<div class="burger">
+    <div class="burger__links">
+        <a class="header__link" href="posters">афиша</a>
+        <a class="header__link" href="shop">магазин</a>
+        <a class="header__link" href="about">о театре</a>
+        <a class="header__link" href="events">мероприятия</a>
+        <a class="header__link" href="help">поддержка</a>
+    </div>
+</div>
+<body class="posters" style="overflow-x: hidden;">
+    <p class="line line__left">КРИК 10% СКИДКА! 2 АПРЕЛЯ</p>
+    <P class="line line__right">ЗАБЫТЫЙ СОН 15% СКИДКА! ИЮНЯ</P>
+    <div class="texts__absoluted up__text">
+        <div class="texts_items">
+            <div class="left__text">
+                <p class="left__title text__title">Видимость</p>
+                <p class="left__desc text__desc">Спектакль о страхе потери всего самого<br> важного для человека</p>
+            </div>
+            <div class="right__text">
+                <p class="right__title text__title">Последний танец</p>
+                <p class="right__desc text__desc">Спектакль о людях, которые боятся<br> выстпулений и сцены. Основано на реальных<br> событиях</p>
+            </div>
+        </div>
+    </div>
+    <div class="posters__items">
+        <div class="poster__items_group">
+            <div class="poster__item">
+                <img class="poster__item_img poster__item_1" src="./imgs/events/1.png" alt="">
+                
+            </div>
+            <div class="poster__item">
+                <img class="poster__item_img poster__item_2" src="./imgs/events/2.png" alt="">
+            </div>
+        </div>
+        <div class="poster__items_group">
+            <div class="poster__item">
+                <img class="poster__item_img poster__item_3" src="./imgs/events/3.png" alt="">
+            </div>
+            <div class="poster__item">
+                <img class="poster__item_img poster__item_4" src="./imgs/events/4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="down__text">
+        <div class="texts_items">
+            <div class="left__text">
+                <p class="left__title text__title">Видимость</p>
+                <p class="left__desc text__desc">Спектакль о страхе потери всего самого<br> важного для человека</p>
+            </div>
+            <div class="right__text">
+                <p class="right__title text__title">Последний танец</p>
+                <p class="right__desc text__desc">Спектакль о людях, которые боятся<br> выстпулений и сцены. Основано на реальных<br> событиях</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery.3.7.1.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/posters_control.js"></script>
+</html>
